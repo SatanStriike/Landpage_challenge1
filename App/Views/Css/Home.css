@@ -7,9 +7,27 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Styles Header */
 
 .header-container {
-    
+    display: flex;
 }
 
+.header-name {
+    width: 25%;
+    text-align: center;
+}
+
+.header-name-text {
+    padding-top: 2%;
+    font-size: 26px;
+}
+
+.header-items-container {
+    width: 100%;
+
+}
