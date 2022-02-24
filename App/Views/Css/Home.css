@@ -1,9 +1,21 @@
 /* Home Desktop Styles */
 
+/* Fonts imports */
+
+@font-face {
+    font-family: RobotoHeader;
+    src: url('../../Assets/fonts/robotoFonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: notoSerifButton;
+    src: url('../../Assets/fonts/notoSerifDisplayFonts/NotoSerifDisplay-Regular.ttf');
+}
+
 body {
     background-color: black;
-    color: #fff;
-    padding: 0;
+    color: #ffffff;
+    padding: 0 8%;
     margin: 0;
 }
 
@@ -18,16 +30,108 @@ ul {
 }
 
 .header-name {
-    width: 25%;
-    text-align: center;
+    width: 55%;
 }
 
 .header-name-text {
-    padding-top: 2%;
-    font-size: 26px;
+    padding-top: 6%;
+    font-size: 25px;
+    font-weight: inherit;
 }
 
 .header-items-container {
+    display: flex;
     width: 100%;
+    padding-left: 14%;
+}
 
+.header-items-list {
+    width: 10%;
+    text-align: center;
+    padding-top: 7%;
+    padding-left: 9%;
+}
+
+.header-items-list > a {
+    text-decoration: none;
+}
+
+.header-item-span {
+    color: gray;
+    font-size: 16px;
+    font-family: RobotoHeader;
+    font-weight: 600;
+}
+
+.header-button-container {
+    width: 50%;
+    padding-top: 2%;
+    padding-left: 4%;
+}
+
+.header-button {
+    font-family: notoSerifButton;
+    width: 70%;
+    height: 60px;
+    background-color: #b2b229f0;
+    color: black;
+    font-size: 18px;
+    border: none;
+    font-weight: 500;
+    margin: 0 0 0 30%;
+}
+
+/* Styles Body */
+
+.container-text-title-body {
+    padding-right: 40%;
+    margin: 6% 0 2% 0;
+}
+
+.container-text-text-body {
+    padding-right: 42%;
+    margin: 0 0 7% 0;
+}
+
+.text-title-body {
+    font-size: 66px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.text-text-body {
+    font-family: RobotoHeader;
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
+    margin: 0;
+}
+
+/* Styles images logos */
+
+.container-imgs-logo {
+    display: flex;
+    margin: 0 0 5% 0;
+}
+
+.img-body-logo-tinny {
+    width: 25%;
+}
+
+.img-body-logo {
+    width: 35%;
+}
+
+/* Styles images body */
+
+.container-imgs-body {
+    display: flex;
+}
+
+.img-spense {
+    margin: 0 3% 0 0;
+}
+
+.img-yelp {
+    margin: 0 0 0 3%;
 }
